@@ -50,6 +50,7 @@ for line in input:
         file_name += "-%d" % servers[file_name]
       else:
         servers[file_name] = 0
+      file_name = file_name + ".conf"
       print "Creating virtual host file... %s" % file_name,
       if commented:
         n_commented += 1
